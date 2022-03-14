@@ -8,8 +8,8 @@ import java.util.List;
 
 @Data
 @Configuration
-@ConfigurationProperties("twitter.to.kafka")
-public class TwitterToKafkaConfiguration {
+@ConfigurationProperties("twitter.reporter.twifka")
+public class TwifkaConfiguration {
 
     private List<String> twitterKeywords;
 
