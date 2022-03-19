@@ -8,8 +8,8 @@ import java.util.Set;
 
 @Data
 @Configuration
-@ConfigurationProperties("twitter.reporter.kafka-hq")
-public class KafkaConfiguration {
+@ConfigurationProperties("twitter.reporter.kafka-hq.kafka-admin")
+public class KafkaAdminProperties {
 
     private String bootstrapServers;
 

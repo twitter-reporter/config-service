@@ -9,7 +9,7 @@ import java.util.List;
 @Data
 @Configuration
 @ConfigurationProperties("twitter.reporter.twifka")
-public class TwifkaConfiguration {
+public class TwifkaProperties {
 
     private List<String> twitterKeywords;
 

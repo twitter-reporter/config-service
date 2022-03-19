@@ -9,7 +9,7 @@ import java.util.List;
 @Data
 @Configuration
 @ConfigurationProperties("twitter.reporter.retry-config")
-public class RetryConfiguration {
+public class RetryProperties {
 
     private long initialIntervalInMs;
 
