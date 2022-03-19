@@ -1,4 +1,4 @@
-package io.twitter.reporter.config;
+package io.twitter.reporter.config.dtos;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
