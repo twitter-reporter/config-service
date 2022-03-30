@@ -1,0 +1,34 @@
+twitter.reporter:
+  twifka.twitter-keywords:
+    - Java
+    - Microservices
+    - Kafka
+    - Elasticsearch
+  retry-config:
+    initial-interval-in-ms: 1000
+    max-interval-in-ms: 1000
+    multiplier: 2.0
+    max-attempts: 3
+    sleep-time-in-ms: 2000
+
+  kafka-hq:
+    kafka-admin:
+      "bootstrapServers": "localhost:9092"
+      "schemaRegistryUrlKey": "schema.registry.url"
+      "schemaRegistryUrl": "http://localhost:8081"
+      "topicName": "twitter-topic"
+      "topicNamesToCreate":
+        - "twitter-topic"
+      "partitionsCount": 3
+      "replicationFactor": 1
+
+    kafka-producer:
+      "key-serializer-class": org.apache.kafka.common.serialization.LongSerializer
+      "value-serializer-class": io.confluent.kafka.serializers.KafkaAvroSerializer
+      "compression-type": snappy
+      "acks": all
+      "batch-size": 16384
+      "batch-size-boost-factor": 100
+      "linger-ms": 5
+      "request-timeout-ms": 60000
+      "retry-count": 5
