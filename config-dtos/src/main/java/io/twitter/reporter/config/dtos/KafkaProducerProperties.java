@@ -10,12 +10,20 @@ import org.springframework.context.annotation.Configuration;
 public class KafkaProducerProperties {
 
     private String keySerializerClass;
+
     private String valueSerializerClass;
+
     private String compressionType;
+
     private String acks;
+
     private int batchSize;
+
     private int batchSizeBoostFactor;
+
     private int lingerMs;
+
     private int requestTimeoutMs;
+
     private int retryCount;
 }
