@@ -24,7 +24,7 @@
 
         <dependency>
             <groupId>io.twitter.reporter</groupId>
-            <artifactId>config-data</artifactId>
+            <artifactId>config-dtos</artifactId>
         </dependency>
 
     </dependencies>

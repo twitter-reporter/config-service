@@ -1,4 +1,11 @@
 server.port: 8888
+
+spring.cloud.config:
+  server.git:
+    uri: file://Users/mohsen.ebrahimi/programming/projects/kafka/twitter-reporter/config-data
+    clone-on-start: true
+  fail-fast: true
+
 logging.level:
   ROOT: DEBUG
   org.springframework.cloud.config: DEBUG
